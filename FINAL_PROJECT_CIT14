@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .profile {
+            width: 30%;
+            text-align: center;
+        }
+
+        .profile img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 0%;
+            width: 80%;
+            height: auto;
+        }
+
+        .about-me {
+            width: 65%;
+            margin-left: 20px;
+        }
+
+        .about-me h2 {
+            color: #141010;
+            text-align: center;
+            border-radius: 5px;
+            border-bottom: 1px solid #222;
+        }
+        .about-me ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        p {
+            position: relative;
+        }
+
+        .underline {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #222; /* You can adjust the color as needed */
+        }
+        .quote-text {
+            margin-top: 20px;
+        }
+
+        .social-media {
+            margin-top: 20px;
+        }
+
+        .social-media h3 {
+            color: #141010;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .social-media ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .social-media li {
+            margin: 0 10px;
+        }
+
+        .social-media i {
+            font-size: 2em;
+            color: black;
+        }
+
+        .portfolio-container {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .portfolio-container h2 {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .project h3 {
+            background-color: #F1F1F1;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .project button {
+            background-color: #222;
+            color: #fff; /* Set text color to white */
+            border: none;
+            border-radius: 5px;
+            padding: 8px 16px;
+            cursor: pointer;
+        }
+
+        .project button:hover {
+           background-color: #444;
+           color: #fff; /* Set text color to white on hover */
+
+        }
+        .project {
+            width: calc(25.25% - 20px);
+            margin-bottom: 20px;
+            border: 1px solid #222;
+            border-radius: 10px;
+            box-sizing: border-box;
+            /* Remove the background color */
+            /* background-color: #F1F1F1; */
+
+        }
+        .project .divider {
+            width: 100%;
+            height: 1px;
+            background-color: #222;
+            margin: 10px 0;
+        }
+
+        .project a:hover {
+            background-color: #444;
+        }
+        .buttons button {
+            background-color: #067FD0;
+            color: #fff;
+            margin-right: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .buttons button:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+
+            .profile,
+            .about-me,
+            .quote,
+            .social-media {
+                width: 100%;
+                margin-left: 0;
+            }
+
+            .project {
+                width: calc(50% - 20px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>GITHUB - About Me Page</h1>
+    </header>
+    <main>
+        <div class="profile">
+            <img src="https://pbs.twimg.com/profile_images/1490468029129363459/diSVIk4M_400x400.jpg"
+                alt="Harry Ann Marielle A. Fagel">
+            <h2>Harry Ann Marielle A. Fagel</h2>
+            <div class="buttons">
+                <button id="button1">Geek</button>
+                <button id="button2">Web Developer</button>
+                <button id="button3">Weeb</button>
+            </div>
+            <div class="social-media">
+                <h3>Social Media Accounts:</h3>
+                <ul>
+                    <li><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="about-me">
+            <h2>About Me</h2>
+            <ul>
+                <p>I am a programmer and I am aware that programming isn't for everyone. I have been teaching subjects
+                    like:</p>
+                <li>• CC2: Introduction to Computer Programming</li>
+                <li>• CC3: Object Oriented Programming</li>
+                <li>• CC6: Emerging Technologies</li>
+                <li>• CC22: Mobile Application Design and Development</li>
+                <li>• CIT14: Introduction to Web Technologies</li>
+            </ul>
+            <p>Likes: Programming [Web Development], Dance [Street dances like tutting, hip-hop, anything good for the
+                soul], carbonara, anime</p>
+            <p>Dislikes: Cat fur, getting sick, being inactive<span class="underline"></span></p>
+            <div class="quote-text">
+                <p>"Any fool can write code that a computer can understand. Good programmers write code that humans can
+                    understand."</p>
+                <p>- Martin Fowler</p>
+            </div>
+        </div>
+    </main>
+    <section class="portfolio-container">
+        <h2>&lt;PROGRAMMING_PORTFOLIO&gt;</h2>
+        <div class="portfolio">
+            <div class="project">
+                <h3>Activity 1</h3>
+                <div class="divider"></div>
+                <p>Bootstrap Jquery - Midterm Exam</p>
+                <button><a href="file:///C:/Users/Personal/Documents/REEXAM1.html" target="_blank">Visit Project</a></button>
+            </div>
+            <div class="project">
+                <h3>Activity 2</h3>
+                <div class="divider"></div>
+                <p>Bootstrap Jquery - Progress Form with buttons and event handlers</p>
+                <button><a href="file:///C:/Users/Personal/Downloads/BootStrap%20-%20JavaScript%20Activity%201.html" target="_blank">Visit Project</a></button>
+            </div>
+            <div class="project">
+                <h3>Activity 3</h3>
+                <div class="divider"></div>
+                <p>Bootstrap Jquery - Registration Form</p>
+                <button><a href="file:///C:/Users/Personal/Downloads/bootstrap_activity2.html" target="_blank">Visit Project</a></button>
+            </div>
+            <div class="project">
+                <h3>Activity 4-Table Rows and Columns</h3>
+                <div class="divider"></div>
+                <p>Details</p>
+                <button><a href="file:///C:/Users/Personal/Downloads/bootstrap_activity3.html" target="_blank">Visit Project</a></button>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
